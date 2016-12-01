@@ -33,7 +33,7 @@
 		0036CF181DEEABD500E3D2A3 /* newBuilding.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0036CF141DEEABD500E3D2A3 /* newBuilding.jpg */; };
 		0036CF191DEEABD500E3D2A3 /* paintingWall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0036CF151DEEABD500E3D2A3 /* paintingWall.jpg */; };
 		0036CF1A1DEEABD500E3D2A3 /* womanStudent.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0036CF161DEEABD500E3D2A3 /* womanStudent.jpg */; };
-		0036CF1D1DEFEFC000E3D2A3 /* setTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0036CF1C1DEFEFC000E3D2A3 /* setTitleViewController.swift */; };
+		0036CF1F1DF0922700E3D2A3 /* googleLogo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0036CF1E1DF0922700E3D2A3 /* googleLogo.jpg */; };
 		005D47201DD27FE7003E3228 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005D471F1DD27FE7003E3228 /* AppDelegate.swift */; };
 		005D47251DD27FE7003E3228 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 005D47231DD27FE7003E3228 /* Main.storyboard */; };
 		005D47281DD27FE7003E3228 /* HU_Donations.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 005D47261DD27FE7003E3228 /* HU_Donations.xcdatamodeld */; };
@@ -95,7 +95,7 @@
 		0036CF141DEEABD500E3D2A3 /* newBuilding.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = newBuilding.jpg; sourceTree = "<group>"; };
 		0036CF151DEEABD500E3D2A3 /* paintingWall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = paintingWall.jpg; sourceTree = "<group>"; };
 		0036CF161DEEABD500E3D2A3 /* womanStudent.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = womanStudent.jpg; sourceTree = "<group>"; };
-		0036CF1C1DEFEFC000E3D2A3 /* setTitleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = setTitleViewController.swift; sourceTree = "<group>"; };
+		0036CF1E1DF0922700E3D2A3 /* googleLogo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = googleLogo.jpg; sourceTree = "<group>"; };
 		005D471C1DD27FE7003E3228 /* HU-Donations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HU-Donations.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		005D471F1DD27FE7003E3228 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		005D47241DD27FE7003E3228 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -186,6 +186,7 @@
 		0036CF1B1DEFEB6C00E3D2A3 /* Photos */ = {
 			isa = PBXGroup;
 			children = (
+				0036CF1E1DF0922700E3D2A3 /* googleLogo.jpg */,
 				0036CED91DE8ACAA00E3D2A3 /* images.png */,
 				005D47501DD2982E003E3228 /* feat_howard05__01.jpg */,
 				0036CEE51DEBA69A00E3D2A3 /* Facebook_100.png */,
@@ -230,7 +231,6 @@
 				0036CEF61DEDFF1B00E3D2A3 /* models */,
 				0036CEEB1DEBF32D00E3D2A3 /* HU-Donations.entitlements */,
 				005D471F1DD27FE7003E3228 /* AppDelegate.swift */,
-				0036CF1C1DEFEFC000E3D2A3 /* setTitleViewController.swift */,
 				005D47231DD27FE7003E3228 /* Main.storyboard */,
 				005D47291DD27FE7003E3228 /* Assets.xcassets */,
 				001C77F01DD36ABD004D3D0D /* GoogleService-Info.plist */,
@@ -423,6 +423,7 @@
 				0036CEE61DEBA69A00E3D2A3 /* Facebook_100.png in Resources */,
 				0036CF171DEEABD500E3D2A3 /* blackStudent.png in Resources */,
 				005D472A1DD27FE7003E3228 /* Assets.xcassets in Resources */,
+				0036CF1F1DF0922700E3D2A3 /* googleLogo.jpg in Resources */,
 				0036CEE81DEBDEAD00E3D2A3 /* Circled User Male_100.png in Resources */,
 				0036CF191DEEABD500E3D2A3 /* paintingWall.jpg in Resources */,
 				0036CF181DEEABD500E3D2A3 /* newBuilding.jpg in Resources */,
@@ -601,7 +602,6 @@
 				0036CEEA1DEBE98A00E3D2A3 /* FIRService.swift in Sources */,
 				0036CEF91DEDFF7800E3D2A3 /* detailViewController.swift in Sources */,
 				0036CF121DEE830C00E3D2A3 /* ThankYouViewController.swift in Sources */,
-				0036CF1D1DEFEFC000E3D2A3 /* setTitleViewController.swift in Sources */,
 				0036CEF31DED337B00E3D2A3 /* protocals.swift in Sources */,
 				005D47551DD2A3B3003E3228 /* projectsController.swift in Sources */,
 				005D47531DD29CB2003E3228 /* projectCell.swift in Sources */,

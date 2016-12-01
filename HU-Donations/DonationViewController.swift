@@ -13,8 +13,10 @@ class DonationViewController: UIViewController, PayPalPaymentDelegate {
     var project: projectObject!
     @IBOutlet weak var donateAmount: UITextField!
     
+    @IBOutlet weak var donateButton: UIButton!
 // Setting up required Items for paypal
     
+    @IBOutlet weak var viewHolder: UIView!
     var environment:String = PayPalEnvironmentNoNetwork {
         willSet(newEnvironment) {
             if (newEnvironment != environment) {
@@ -35,14 +37,42 @@ class DonationViewController: UIViewController, PayPalPaymentDelegate {
         
         payPalConfig.languageOrLocale = Locale.preferredLanguages[0]
         payPalConfig.payPalShippingAddressOption = .payPal
-
+        
+        donationInputLabel.layer.cornerRadius = 5
+        donationInputLabel.layer.borderWidth = 1
+        donationInputLabel.layer.borderColor = UIColor.black.cgColor
+        
+        donationInputLabel.backgroundColor = .clear
+        donationInputLabel.layer.cornerRadius = 5
+        donationInputLabel.layer.borderWidth = 1
+        donationInputLabel.layer.borderColor = UIColor.orange.cgColor
+        
+        donateButton.layer.shadowColor = UIColor.black.cgColor
+        donateButton.layer.shadowOpacity = 3
+        donateButton.layer.shadowOffset = CGSize.zero
+        donateButton.layer.shadowRadius = 10
+        
+        donateButton.backgroundColor = .clear
+        donateButton.layer.cornerRadius = 5
+        donateButton.layer.borderWidth = 1
+        donateButton.layer.borderColor = UIColor.orange.cgColor
+        
+        viewHolder.backgroundColor = .clear
+        viewHolder.layer.cornerRadius = 5
+        viewHolder.layer.borderWidth = 1
+        viewHolder.layer.borderColor = UIColor.orange.cgColor
+        
+        viewHolder.layer.shadowColor = UIColor.black.cgColor
+        viewHolder.layer.shadowOffset = CGSize.zero
+        viewHolder.layer.shadowOpacity = 1
+        viewHolder.layer.shadowRadius = 1.0
     }
 
     // PayPalPaymentDelegate
     
     func payPalPaymentDidCancel(_ paymentViewController: PayPalPaymentViewController) {
         print("PayPal Payment Cancelled")
-        let Controller = storyboard?.instantiateViewController(withIdentifier: "projectController") as! projectsController
+        let Controller = storyboard?.instantiateViewController(withIdentifier: "donationView") as! DonationViewController
         self.navigationController?.pushViewController(Controller, animated: true)
         paymentViewController.dismiss(animated: true, completion: nil)
         
@@ -102,4 +132,5 @@ class DonationViewController: UIViewController, PayPalPaymentDelegate {
         }
 
     }
+    @IBOutlet weak var donationInputLabel: UITextField!
 }

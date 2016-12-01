@@ -51,5 +51,96 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HU-Donations/projectCell.swift"
+            timestampString = "502300310.093401"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "2"
+            endingLineNumber = "2">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HU_Donations.projectCell.__deallocating_deinit"
+                  moduleName = "HU-Donations"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Kwaku-Cesa/Desktop/HU-Donations/HU-Donations/projectCell.swift"
+                  timestampString = "502300310.855831"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HU_Donations.projectCell.init (style : __C.UITableViewCellStyle, reuseIdentifier : Swift.Optional&lt;Swift.String&gt;) -&gt; HU_Donations.projectCell"
+                  moduleName = "HU-Donations"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Kwaku-Cesa/Desktop/HU-Donations/HU-Donations/projectCell.swift"
+                  timestampString = "502300310.857891"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HU_Donations.projectCell.__allocating_init (style : __C.UITableViewCellStyle, reuseIdentifier : Swift.Optional&lt;Swift.String&gt;) -&gt; HU_Donations.projectCell"
+                  moduleName = "HU-Donations"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Kwaku-Cesa/Desktop/HU-Donations/HU-Donations/projectCell.swift"
+                  timestampString = "502300310.859572"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HU_Donations.projectCell.__allocating_init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;HU_Donations.projectCell&gt;"
+                  moduleName = "HU-Donations"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Kwaku-Cesa/Desktop/HU-Donations/HU-Donations/projectCell.swift"
+                  timestampString = "502300310.860991"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HU_Donations.projectCell.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;HU_Donations.projectCell&gt;"
+                  moduleName = "HU-Donations"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Kwaku-Cesa/Desktop/HU-Donations/HU-Donations/projectCell.swift"
+                  timestampString = "502300310.862345"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "44">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

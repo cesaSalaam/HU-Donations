@@ -24,6 +24,16 @@ class detailViewController: UIViewController{
         // function for when the donation button is clicked in this view.
         self.performSegue(withIdentifier: "toDonate", sender: project) //segue to new view.
     }
+    @IBAction func exitButtonClicked(_ sender: AnyObject) {
+        let Controller = storyboard?.instantiateViewController(withIdentifier: "projectController") as! projectsController
+        self.navigationController?.pushViewController(Controller, animated: true)
+    }
+    
+    @IBOutlet weak var shareButton: UIButton!
+    
+    @IBOutlet weak var facebookShareButton: UIButton!
+    
+    @IBOutlet weak var viewHolder: UIView!
     @IBAction func faceBookShare(_ sender: AnyObject) {
         //function for sharing to facebook.
         if SLComposeViewController.isAvailable(forServiceType: SLServiceTypeFacebook){
@@ -38,18 +48,34 @@ class detailViewController: UIViewController{
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        let backItem = UIBarButtonItem()
-        backItem.title = " "
-        navigationItem.backBarButtonItem = backItem
+        
+        self.navigationItem.setHidesBackButton(true, animated:true)
         
         self.projectTitle.text = project.projectTitle
-        self.owner.text = project.projectOwner
+        self.owner.text = "by " + project.projectOwner
         self.projectDescription.text = project.projectDescription
         self.projectImage.image = UIImage(named: project.projectImage)
+        
+        projectDescription.layer.backgroundColor = UIColor.clear.cgColor
         projectImage.layer.shadowColor = UIColor.black.cgColor
         projectImage.layer.shadowOpacity = 1
         projectImage.layer.shadowOffset = CGSize.zero
         projectImage.layer.shadowRadius = 10
+        
+        shareButton.backgroundColor = .clear
+        shareButton.layer.cornerRadius = 5
+        shareButton.layer.borderWidth = 1
+        shareButton.layer.borderColor = UIColor.orange.cgColor
+        
+        facebookShareButton.backgroundColor = .clear
+        facebookShareButton.layer.cornerRadius = 5
+        facebookShareButton.layer.borderWidth = 1
+        facebookShareButton.layer.borderColor = UIColor.orange.cgColor
+        
+        viewHolder.backgroundColor = .clear
+        viewHolder.layer.cornerRadius = 5
+        viewHolder.layer.borderWidth = 1
+        viewHolder.layer.borderColor = UIColor.blue.cgColor
         // Do any additional setup after loading the view.
     }
     
