@@ -217,7 +217,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="aSJ-xo-xIB"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -486,13 +486,13 @@
                                 <rect key="frame" x="0.0" y="92" width="375" height="334"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NdJ-sp-qIM" id="3X6-dR-q5i">
-                                    <frame key="frameInset" width="375" height="333.5"/>
+                                    <frame key="frameInset" width="375" height="334"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="feat_howard05__01.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="7aw-au-c50"/>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Latest and Greatest Technology" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V8p-oB-4c6">
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="38" id="Sjy-SN-1bO"/>
+                                                <constraint firstAttribute="height" constant="38" id="tmq-Jh-7mX"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -500,13 +500,13 @@
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="7aw-au-c50" firstAttribute="centerY" secondItem="3X6-dR-q5i" secondAttribute="centerY" id="4Uz-Xp-IDh"/>
-                                        <constraint firstItem="7aw-au-c50" firstAttribute="top" secondItem="3X6-dR-q5i" secondAttribute="top" id="4tU-dE-lJi"/>
-                                        <constraint firstItem="7aw-au-c50" firstAttribute="centerX" secondItem="V8p-oB-4c6" secondAttribute="centerX" id="8D8-YJ-Vsv"/>
-                                        <constraint firstItem="V8p-oB-4c6" firstAttribute="leading" secondItem="3X6-dR-q5i" secondAttribute="leadingMargin" id="8rA-Ee-KRm"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="V8p-oB-4c6" secondAttribute="bottom" constant="67" id="QoG-hE-2u4"/>
-                                        <constraint firstAttribute="trailing" secondItem="7aw-au-c50" secondAttribute="trailing" id="cXz-k9-EsO"/>
-                                        <constraint firstItem="7aw-au-c50" firstAttribute="leading" secondItem="3X6-dR-q5i" secondAttribute="leading" id="ksB-1Y-s2m"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="V8p-oB-4c6" secondAttribute="bottom" constant="17" id="0Dx-DY-sK1"/>
+                                        <constraint firstItem="7aw-au-c50" firstAttribute="top" secondItem="3X6-dR-q5i" secondAttribute="top" id="Kn1-PU-sR9"/>
+                                        <constraint firstAttribute="trailing" secondItem="7aw-au-c50" secondAttribute="trailing" id="LmU-hh-q36"/>
+                                        <constraint firstItem="7aw-au-c50" firstAttribute="leading" secondItem="3X6-dR-q5i" secondAttribute="leading" id="Yc6-dw-puZ"/>
+                                        <constraint firstItem="V8p-oB-4c6" firstAttribute="leading" secondItem="3X6-dR-q5i" secondAttribute="leadingMargin" id="re7-N2-Ue6"/>
+                                        <constraint firstItem="7aw-au-c50" firstAttribute="centerY" secondItem="3X6-dR-q5i" secondAttribute="centerY" id="uWZ-aq-P5f"/>
+                                        <constraint firstItem="7aw-au-c50" firstAttribute="centerX" secondItem="V8p-oB-4c6" secondAttribute="centerX" id="uvw-ri-r5F"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.97541721199999998" green="0.97541721199999998" blue="0.97541721199999998" alpha="0.44013187059999997" colorSpace="calibratedRGB"/>
