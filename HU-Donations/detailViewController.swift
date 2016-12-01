@@ -46,7 +46,10 @@ class detailViewController: UIViewController{
         self.owner.text = project.projectOwner
         self.projectDescription.text = project.projectDescription
         self.projectImage.image = UIImage(named: project.projectImage)
-        
+        projectImage.layer.shadowColor = UIColor.black.cgColor
+        projectImage.layer.shadowOpacity = 1
+        projectImage.layer.shadowOffset = CGSize.zero
+        projectImage.layer.shadowRadius = 10
         // Do any additional setup after loading the view.
     }
     
