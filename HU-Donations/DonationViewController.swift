@@ -17,6 +17,12 @@ class DonationViewController: UIViewController, PayPalPaymentDelegate {
 // Setting up required Items for paypal
     
     @IBOutlet weak var viewHolder: UIView!
+    
+    @IBAction func leavePage(_ sender: AnyObject) {
+        let Controller = storyboard?.instantiateViewController(withIdentifier: "detailView") as! detailViewController
+        Controller.project = self.project
+        self.navigationController?.pushViewController(Controller, animated: true)
+    }
     var environment:String = PayPalEnvironmentNoNetwork {
         willSet(newEnvironment) {
             if (newEnvironment != environment) {
@@ -28,7 +34,7 @@ class DonationViewController: UIViewController, PayPalPaymentDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //self.navigationItem.setHidesBackButton(true, animated:true)
         // Set up payPalConfig
         payPalConfig.acceptCreditCards = false
         payPalConfig.merchantName = "Howard University"
@@ -47,10 +53,6 @@ class DonationViewController: UIViewController, PayPalPaymentDelegate {
         donationInputLabel.layer.borderWidth = 1
         donationInputLabel.layer.borderColor = UIColor.orange.cgColor
         
-        donateButton.layer.shadowColor = UIColor.black.cgColor
-        donateButton.layer.shadowOpacity = 3
-        donateButton.layer.shadowOffset = CGSize.zero
-        donateButton.layer.shadowRadius = 10
         
         donateButton.backgroundColor = .clear
         donateButton.layer.cornerRadius = 5
@@ -61,11 +63,6 @@ class DonationViewController: UIViewController, PayPalPaymentDelegate {
         viewHolder.layer.cornerRadius = 5
         viewHolder.layer.borderWidth = 1
         viewHolder.layer.borderColor = UIColor.orange.cgColor
-        
-        viewHolder.layer.shadowColor = UIColor.black.cgColor
-        viewHolder.layer.shadowOffset = CGSize.zero
-        viewHolder.layer.shadowOpacity = 1
-        viewHolder.layer.shadowRadius = 1.0
     }
 
     // PayPalPaymentDelegate
@@ -73,6 +70,7 @@ class DonationViewController: UIViewController, PayPalPaymentDelegate {
     func payPalPaymentDidCancel(_ paymentViewController: PayPalPaymentViewController) {
         print("PayPal Payment Cancelled")
         let Controller = storyboard?.instantiateViewController(withIdentifier: "donationView") as! DonationViewController
+        Controller.project = self.project
         self.navigationController?.pushViewController(Controller, animated: true)
         paymentViewController.dismiss(animated: true, completion: nil)
         
@@ -96,6 +94,7 @@ class DonationViewController: UIViewController, PayPalPaymentDelegate {
     @IBAction func donateAction(_ sender: AnyObject) {
         //function for when donate button is clicked
         //creates an item being "sold" (ie. Donated to).
+        if donateAmount.text != "" {
         let item1 = PayPalItem(name: project.projectTitle, withQuantity: 1, withPrice: NSDecimalNumber(string: donateAmount.text), withCurrency: "USD", withSku: "Hip-0037")
         let items = [item1]
         let subtotal = PayPalItem.totalPrice(forItems: items)
@@ -129,6 +128,7 @@ class DonationViewController: UIViewController, PayPalPaymentDelegate {
             // empty, this payment wouldn't be processable, and you'd want
             // to handle that here.
             print("Payment not processalbe: \(payment)")
+        }
         }
 
     }
